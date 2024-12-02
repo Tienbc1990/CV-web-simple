@@ -1,0 +1,336 @@
+body {
+  margin: 0px;
+}
+
+.cv-document {
+  box-sizing: border-box;
+  border: none;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: arial, sans-serif, tahoma;
+  font-size: 10pt;
+}
+
+.cv-page {
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+  text-decoration: none;
+  width: 900px;
+  min-height: 900px;
+  margin: 0 auto;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  position: relative;
+
+  padding: 40px;
+}
+
+.section-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 0px 0px 5px;
+  padding: 0 0 3px;
+  border-bottom: #000 1px solid;
+}
+
+#info {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 40px;
+  background-color: #fff;
+}
+.information {
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 4px;
+  width: 15%;
+  height: 100%;
+}
+
+.info-ofme {
+  font-size: inherit;
+  display: inline-block;
+  margin-left: 1px;
+  line-height: 20px;
+}
+
+.info1 {
+  display: inline-block;
+}
+
+.info2 {
+  position: absolute;
+  left: 105px;
+}
+
+.section-content {
+  display: inline-block;
+  position: relative;
+  margin: 5px 0 0;
+  width: 100%;
+}
+
+#target {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 40px 40px;
+  padding: 0;
+  background-color: #fff;
+}
+
+#education {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+#experience {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+#activity {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+#skill {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+#certificate {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+#hobby {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+#project {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+#contact {
+  position: relative;
+  width: 90%;
+  display: inline-block;
+  margin: 0 40px 20px 40px;
+  background-color: #fff;
+}
+
+/* Hiển thị các mốc thời gian theo danh sách liệt kê */
+.year {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  text-align: top;
+  width: 20%;
+  margin: 0;
+}
+
+/* Hiển thị thông tin tương ứng với mốc thời gian liệt kê*/
+.place {
+  display: inline-block;
+  position: relative;
+  left: 150px;
+  width: 80%;
+}
+
+/* class parent của 2 class: year và place */
+.year-place,
+.year-place-1 {
+  display: inline-block;
+  left: 0px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.year-place {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* Bỏ toàn bộ bullet point của li */
+ul {
+  list-style: none;
+  line-height: 15px;
+}
+
+/* Không áp dụng bullet point*/
+.none-li {
+  list-style: none;
+  display: inline-block;
+  padding: 15px 10px;
+  margin: 0px;
+}
+
+/* Áp dụng bullet point*/
+.dot-li {
+  list-style: disc;
+  line-height: 15px;
+  display: inline-block;
+  padding: 5px 0px 5px 25px;
+  margin: 0px;
+}
+
+/*Tạo gạch ngang giữa 2 khối */
+.my-3 {
+  margin: 0 24px;
+  border-top: rgba(0, 0, 0, 0.05);
+}
+
+.timeline1,
+.timeline2 {
+  position: relative;
+  padding-bottom: 1em;
+  width: 100%;
+}
+
+.timeline1::before {
+  background-color: rgba(78, 61, 61, 0.5);
+  width: 1px;
+  height: 125px;
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 5px;
+  left: 5px;
+}
+
+.timeline2::before {
+  background-color: rgba(78, 61, 61, 0.5);
+  width: 1px;
+  height: 175px;
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 5px;
+  left: 5px;
+}
+
+.timeline1-dot,
+.timeline2-dot {
+  position: relative;
+  margin: 0;
+  padding-bottom: 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.timeline1-dot::before {
+  background-color: #000;
+  border: 0.1875em solid black;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  top: 17px;
+  bottom: 5px;
+  left: 2.5px;
+}
+
+.timeline1-dot::after {
+  background-color: #000;
+  border: 0.1875em solid black;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  top: 90px;
+  bottom: 5px;
+  left: 2.5px;
+}
+
+.timeline2-dot::before {
+  background-color: #000;
+  border: 0.1875em solid black;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  top: 18px;
+  bottom: 5px;
+  left: 2.5px;
+}
+
+.timeline2-dot::after {
+  background-color: #000;
+  border: 0.1875em solid black;
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  content: "";
+  position: absolute;
+  top: 120px;
+  bottom: 5px;
+  left: 2.5px;
+}
+
+h2 {
+  margin-bottom: 1px;
+}
+
+p {
+  margin-top: 2px;
+  margin-bottom: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.h1-name {
+  color: #0e2452;
+}
